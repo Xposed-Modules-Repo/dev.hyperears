@@ -1,10 +1,13 @@
 # HyperEars
 
-[源码仓库](https://github.com/silverpoetry/HyperEars) ·
-[English](https://github.com/silverpoetry/HyperEars/blob/main/README_EN.md) ·
-[兼容性](https://github.com/silverpoetry/HyperEars/blob/main/docs/compatibility.md) ·
-[安装指南](https://github.com/silverpoetry/HyperEars/blob/main/docs/installation.md) ·
-[问题排查](https://github.com/silverpoetry/HyperEars/blob/main/docs/troubleshooting.md)
+[源码仓库][source] · [English][english] · [兼容性][compatibility] ·
+[安装指南][installation] · [问题排查][troubleshooting]
+
+[source]: https://github.com/silverpoetry/HyperEars
+[english]: https://github.com/silverpoetry/HyperEars/blob/main/README_EN.md
+[compatibility]: https://github.com/silverpoetry/HyperEars/blob/main/docs/compatibility.md
+[installation]: https://github.com/silverpoetry/HyperEars/blob/main/docs/installation.md
+[troubleshooting]: https://github.com/silverpoetry/HyperEars/blob/main/docs/troubleshooting.md
 
 HyperEars 是面向 Xiaomi HyperOS 的 LSPosed 模块。它为受支持的第三方蓝牙耳机补充
 MiLink 融合设备中心所需的设备身份、能力和运行状态，使这些设备能够复用系统原生的
