@@ -32,6 +32,9 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 | Edifier / 漫步者 | W860NB PRO、花再 Evo Pro 实机验证；W820/W830/W860 产品线及家族协议确认 |
 | ROSESELSA / 弱水时砂 | EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
+| MOONDROP / 水月雨 | Robin 公开协议；协议确认后提供左右耳电量和降噪、关闭、通透 |
+| 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
+| QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
 | Sony | 已登记 WH、WF、LinkBuds、CH 和 ULT 型号使用公开协议与家族确认 |
 | 其他标准 A2DP/HFP 耳机 | 设备流转、系统音量和 Android 整机电量回退 |
 
@@ -45,7 +48,9 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 - Xiaomi HyperOS，Android 15 或更高版本；
 - root 与可正常工作的 LSPosed，API 101 或更高版本；
 - 目标耳机已通过系统蓝牙完成配对；
-- LSPosed 作用域仅选择 `com.android.bluetooth` 和 `com.milink.service`。
+- LSPosed 必选作用域为 `com.android.bluetooth` 和 `com.milink.service`；如需厂商 App
+  运行时退避，再按[控制 App 目录](https://github.com/silverpoetry/HyperEars/blob/main/docs/control-apps.md)
+  勾选实际使用的厂商应用。
 
 AOSP、MIUI、非小米 ROM 和 Android 15 以下系统不在当前公开测试范围内。
 
