@@ -21,7 +21,8 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 - 将受支持的第三方耳机发布为 MiLink 耳机设备，复用系统设备流转和音量控制。
 - 按实际适配能力提供整机、左右耳和充电盒电量；标准耳机回退到 Android 系统电量。
 - 将已确认的厂商私有协议映射为系统卡片支持的降噪、关闭、通透和型号专属模式。
-- 从耳机卡片打开真实蓝牙设备详情，而不是进入载体型号的厂商设置页。
+- 按用户选择从耳机卡片打开真实蓝牙设备详情、对应厂商控制 App 或 HyperEars；厂商 App
+  不可用时回退到系统设备详情。
 - 在应用内展示蓝牙会话、协议确认和 MiLink 发布生命周期，便于定位兼容问题。
 
 ## 兼容性概览
@@ -33,7 +34,7 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 | StarRing / 籁特易耳 | Ultra 实机验证；其他型号使用标准耳机回退 |
 | Bose | QuietComfort Headphones 实机验证；已登记 BMAP 产品按产品身份和控制方言细化 |
 | Edifier / 漫步者 | W860NB PRO、花再 Evo Pro 实机验证；W820/W830/W860 产品线及家族协议确认 |
-| ROSESELSA / 弱水时砂 | EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
+| ROSESELSA / 弱水时砂 | Furina Endless Solo of Solitude、ROSE Ceramics Ultra 实机验证；EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
 | MOONDROP / 水月雨 | Robin 公开协议；协议确认后提供左右耳电量和降噪、关闭、通透 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
