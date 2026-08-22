@@ -35,11 +35,12 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 | OPPO Enco | Air2 Pro、Free4、X3、Air5 参考协议；其他 Enco 型号使用家族协议确认 |
 | StarRing / 籁特易耳 | Ultra 实机验证；其他型号使用标准耳机回退 |
 | Bose | QuietComfort Headphones 实机验证；已登记 BMAP 产品按产品身份和控制方言细化 |
-| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro 实机验证；W820/W830/W860 产品线及家族协议确认 |
+| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；W820/W830/W860 产品线及家族协议确认 |
 | ROSESELSA / 弱水时砂 | Furina Endless Solo of Solitude、ROSE Ceramics Ultra 实机验证；EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
 | MOONDROP / 水月雨 | Robin 公开协议；协议确认后提供左右耳电量和降噪、关闭、通透 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
+| 华为 | FreeBuds Pro 3 实机验证；FreeBuds 4 公开实现；FreeBuds、FreeClip、FreeLace 产品线进行协议确认 |
 | QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
 | Sony | 已登记 WH、WF、LinkBuds、CH 和 ULT 型号使用公开协议与家族确认 |
 | 其他标准 A2DP/HFP 耳机 | 设备流转、系统音量和 Android 整机电量回退 |
@@ -103,8 +104,8 @@ HyperEars 的源码、开发历史、Issue、Pull Request、完整文档和原�
 ## 许可与声明
 
 HyperEars 以 [GNU GPL-3.0-only](https://github.com/silverpoetry/HyperEars/blob/main/LICENSE)
-发布。本项目与 Xiaomi、vivo、iQOO、OPPO、Bose、Edifier、ROSESELSA、NiceHCK、Sony
-及相关品牌无关；商标和产品名称仅用于兼容性描述。
+发布。本项目与 Xiaomi、vivo、iQOO、OPPO、Bose、Edifier、ROSESELSA、NiceHCK、
+MOONDROP、荣耀、华为、QCY、Sony 及相关品牌无关；商标和产品名称仅用于兼容性描述。
 
 协议研究所参考项目及其许可证见主仓库的
 [第三方声明](https://github.com/silverpoetry/HyperEars/blob/main/THIRD_PARTY_NOTICES.md)。
