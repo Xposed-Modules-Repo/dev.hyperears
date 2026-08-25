@@ -25,7 +25,9 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
   分支开关呈现，不替换系统原生模式按钮。
 - 按用户选择从耳机卡片打开真实蓝牙设备详情、对应厂商控制 App 或 HyperEars；厂商 App
   不可用时回退到系统设备详情。
-- 在应用内展示蓝牙会话、协议确认和 MiLink 发布生命周期，便于定位兼容问题。
+- 在应用内展示蓝牙会话、协议确认和 MiLink 发布生命周期，便于定位兼容问题；兼容性页面可按
+  品牌、型号、电量与噪声能力搜索。
+- 应用提供 Miuix 与 Material 3 两套可切换界面；没有已保存界面偏好时默认使用 Miuix。
 
 ## 兼容性概览
 
@@ -38,7 +40,7 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 | Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；W820/W830/W860 产品线及家族协议确认 |
 | ROSESELSA / 弱水时砂 | Furina Endless Solo of Solitude、ROSE Ceramics Ultra 实机验证；EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
-| MOONDROP / 水月雨 | Robin 公开协议；协议确认后提供左右耳电量和降噪、关闭、通透 |
+| MOONDROP / 水月雨 | Robin 公开协议；Pudding 实机验证并提供左右耳、充电盒电量及降噪、关闭、通透；其他型号标准回退 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
 | 华为 | FreeBuds Pro 3 实机验证；FreeBuds 4 公开实现；FreeBuds、FreeClip、FreeLace 产品线进行协议确认 |
 | QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
