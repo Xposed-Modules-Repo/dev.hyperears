@@ -28,6 +28,10 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 - 在应用内展示蓝牙会话、协议确认和 MiLink 发布生命周期，便于定位兼容问题；兼容性页面可按
   品牌、型号、电量与噪声能力搜索。
 - 应用提供 Miuix 与 Material 3 两套可切换界面；没有已保存界面偏好时默认使用 Miuix。
+  Miuix 可配置明暗模式、界面缩放、菜单栏模糊和悬浮菜单栏，Material 3 保持系统动态配色
+  与标准底栏。
+- FitClip Ultra 在协议确认后使用 MiLink 原生模式卡片提供“标准模式 / 游戏模式”，
+  不会因此声明耳机具有降噪能力。
 
 ## 兼容性概览
 
@@ -35,16 +39,17 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 |---|---|
 | vivo / iQOO | TWS Air3 Pro 实机验证；TWS 3e 公开实现；其他已登记型号使用家族协议确认 |
 | OPPO Enco | Air2 Pro、Free4、X3、Air5 参考协议；其他 Enco 型号使用家族协议确认 |
+| Technics EAH-AZ | AZ80 实机验证：组件电量、三态控制；其他 EAH-AZ TWS 公开协议探测 |
 | StarRing / 籁特易耳 | Ultra 实机验证；其他型号使用标准耳机回退 |
 | Bose | QuietComfort Headphones 实机验证；已登记 BMAP 产品按产品身份和控制方言细化 |
-| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；W820/W830/W860 产品线及家族协议确认 |
-| ROSESELSA / 弱水时砂 | Furina Endless Solo of Solitude、ROSE Ceramics Ultra 实机验证；EARFREE i5、BudsFeel MK2 公开实现；相关产品线使用协议确认 |
+| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；其他已登记型号协议探测 |
+| ROSESELSA / 弱水时砂 | 琉璃 X / Ultra、Furina 实机验证；其他已登记产品公开实现或协议探测 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
 | MOONDROP / 水月雨 | Robin 公开协议；Pudding 实机验证并提供左右耳、充电盒电量及降噪、关闭、通透；其他型号标准回退 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
-| 华为 | FreeBuds Pro 3 实机验证；FreeBuds 4 公开实现；FreeBuds、FreeClip、FreeLace 产品线进行协议确认 |
+| 华为 | 5i、Pro 3、FreeClip 2 实机验证；FreeClip 2 仅组件电量；其他型号公开实现或家族探测 |
 | QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
-| Sony | 已登记 WH、WF、LinkBuds、CH 和 ULT 型号使用公开协议与家族确认 |
+| Sony | WF-1000XM6、WH-1000XM4 实机验证；其他已登记型号公开实现或家族探测 |
 | 其他标准 A2DP/HFP 耳机 | 设备流转、系统音量和 Android 整机电量回退 |
 
 “公开实现”“参考协议”和“家族确认”不等于 HyperEars 实机验证。家族适配器默认不
@@ -106,8 +111,9 @@ HyperEars 的源码、开发历史、Issue、Pull Request、完整文档和原�
 ## 许可与声明
 
 HyperEars 以 [GNU GPL-3.0-only](https://github.com/silverpoetry/HyperEars/blob/main/LICENSE)
-发布。本项目与 Xiaomi、vivo、iQOO、OPPO、Bose、Edifier、ROSESELSA、NiceHCK、
-MOONDROP、荣耀、华为、QCY、Sony 及相关品牌无关；商标和产品名称仅用于兼容性描述。
+发布。本项目与 Xiaomi、vivo、iQOO、OPPO、Panasonic、Technics、Bose、Edifier、
+ROSESELSA、NiceHCK、MOONDROP、荣耀、华为、QCY、Sony 及相关品牌无关；商标和产品名称
+仅用于兼容性描述。
 
 协议研究所参考项目及其许可证见主仓库的
 [第三方声明](https://github.com/silverpoetry/HyperEars/blob/main/THIRD_PARTY_NOTICES.md)。
