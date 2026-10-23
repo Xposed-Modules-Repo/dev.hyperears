@@ -22,7 +22,7 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 - 按实际适配能力提供整机、左右耳和充电盒电量；标准耳机回退到 Android 系统电量。
 - 将已确认的厂商私有协议映射为系统卡片支持的降噪、关闭、通透和型号专属模式。
 - 兼容旧版 HyperOS 与 HyperOS 4 的原生三态耳机卡片；已确认的抗风噪能力作为降噪
-  分支开关呈现，不替换系统原生模式按钮。
+  分支开关或复用不适用的原生模式槽位呈现，具体形式由型号确定。
 - 按用户选择从耳机卡片打开真实蓝牙设备详情、对应厂商控制 App 或 HyperEars；厂商 App
   不可用时回退到系统设备详情。
 - 在应用内展示蓝牙会话、协议确认和 MiLink 发布生命周期，便于定位兼容问题；兼容性页面可按
@@ -44,14 +44,15 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 | Technics EAH-AZ | AZ80 实机验证：组件电量、三态控制；其他 EAH-AZ TWS 公开协议探测 |
 | StarRing / 籁特易耳 | Ultra 实机验证；其他型号使用标准耳机回退 |
 | Bose | QuietComfort Headphones 实机验证；已登记 BMAP 产品按产品身份和控制方言细化 |
-| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；其他已登记型号协议探测 |
+| Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；FitBuds Turbo 原版实测、维护布局待复核；其他已登记型号协议探测 |
 | ROSESELSA / 弱水时砂 | 琉璃 X / Ultra、Furina 实机验证；其他已登记产品公开实现或协议探测 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
-| MOONDROP / 水月雨 | Robin 公开协议；Pudding 实机验证并提供左右耳、充电盒电量及降噪、关闭、通透；其他型号标准回退 |
+| MOONDROP / 水月雨 | Robin 公开协议；Pudding 实机验证；MIRAGE 原版部分实测、维护版待复核；提供合法响应确认的电量与三态控制，其他型号标准回退 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
 | 华为 | 5i、Pro 3、FreeClip 2 实机验证；FreeClip 2 仅组件电量；其他型号公开实现或家族探测 |
 | QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
 | Sony | WF-1000XM6、WH-1000XM4 实机验证；其他已登记型号公开实现或家族探测 |
+| Samsung Galaxy Buds | Buds2 Pro 原版实测、维护版待复核；其他已登记型号参考实现或家族外推，按有效回报开放组件电量、噪声与触控设置 |
 | 其他标准 A2DP/HFP 耳机 | 设备流转、系统音量和 Android 整机电量回退 |
 
 “公开实现”“参考协议”和“家族确认”不等于 HyperEars 实机验证。家族适配器默认不
@@ -59,7 +60,9 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 控制能力。具体型号、证据等级、判型条件和开放能力以
 [完整兼容性矩阵](https://github.com/silverpoetry/HyperEars/blob/main/docs/compatibility.md)为准。
 
-FitBuds Turbo 的协议与控制证据来自贡献者原版实测；2.7.0 维护后的共享卡片布局尚待实机复核。
+FitBuds Turbo、MIRAGE 与 Buds2 Pro 的原版实测记录保留，维护版实机复核继续跟踪。
+新版 Bose 卡片修复已通过布局与模式映射测试，实际显示和点击仍待设备复核。
+Space Travel 2 Ultra 目前只补充家族名称识别，提供系统整机电量、音量和流转。
 
 ## 系统要求
 
@@ -116,7 +119,7 @@ HyperEars 的源码、开发历史、Issue、Pull Request、完整文档和原�
 
 HyperEars 以 [GNU GPL-3.0-only](https://github.com/silverpoetry/HyperEars/blob/main/LICENSE)
 发布。本项目与 Xiaomi、vivo、iQOO、OPPO、Panasonic、Technics、Bose、Edifier、
-ROSESELSA、NiceHCK、MOONDROP、荣耀、华为、QCY、Sony 及相关品牌无关；商标和产品名称
+ROSESELSA、NiceHCK、MOONDROP、荣耀、华为、QCY、Sony、Samsung 及相关品牌无关；商标和产品名称
 仅用于兼容性描述。
 
 协议研究所参考项目及其许可证见主仓库的
