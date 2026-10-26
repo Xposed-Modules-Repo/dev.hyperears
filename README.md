@@ -104,6 +104,9 @@ Android 15 以下系统不在当前公开测试范围内。
 4. 重启设备，使各作用域加载新版模块；仅切换蓝牙开关不保证系统蓝牙扩展重新加载。
 5. 连接耳机后打开 HyperEars，检查会话中的 Adapter、传输、协议和 MiLink 状态。
 
+从 3.0.1 起，HyperEars 的“重启蓝牙”会重新加载系统蓝牙与系统耳机服务，并验证旧宿主进程
+已退出。“重启 MiLink”只负责 MiLink；普通蓝牙开关不保证展示宿主重新加载模块。
+
 首次从早期开发测试包迁移时，如遇签名不一致，应先在 LSPosed 中禁用旧模块、重启、
 卸载旧 APK，再安装正式版本并重新启用。完整步骤见
 [安装指南](https://github.com/silverpoetry/HyperEars/blob/main/docs/installation.md)。
