@@ -35,6 +35,23 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 - FitBuds Turbo 在协议确认后提供四态降噪与游戏模式，抗风噪和游戏开关分别按有效状态显示。
 - 漫步者 TWS 耳电量零值显示为未知；双耳不可用时继续更新盒电量并清除旧耳电量。
 
+## 连接提示与电量通知
+
+从 3.0.0 起，可复用系统原生的耳机连接展示：
+
+- “连接时显示”提供智能、仅弹窗、仅超级岛、关闭。默认智能，按系统判断在桌面／外屏桌面
+  显示电量弹窗，在应用内显示连接超级岛。
+- 弹窗显示左右耳、充电盒或头戴式整机电量；已知盒电量无需充电即可显示，未知电量及时清除。
+  充电标志保持耳机实际回报，图片使用模块提供的通用资源。
+- 超级岛显示已知的左右耳或整机电量，使用系统原生动画和显示时长；当前没有充电盒区域。
+  只有系统整机电量的 TWS 暂不使用头戴式模板。
+- “耳机电量通知”独立控制，默认关闭；通知随状态更新，可打开设备详情或执行原生断开操作。
+  清理通知后，后续状态回报可以重新发布。
+
+这些功能需在 LSPosed 中勾选 `com.xiaomi.bluetooth`，升级或调整作用域后重启设备。
+实机基线为 HyperOS 4，已验证 Bose QuietComfort Headphones 和 vivo TWS Air3 Pro 的对应展示；
+其他系统版本按宿主入口兼容情况启用。首次配对和仅开盖发现继续由系统及设备原有支持决定。
+
 ## 兼容性概览
 
 | 品牌或范围 | 当前适配范围 |
@@ -69,6 +86,7 @@ Space Travel 2 Ultra 目前只补充家族名称识别，提供系统整机电�
 - Xiaomi HyperOS，Android 15 或更高版本；
 - root 与可正常工作的 LSPosed，API 101 或更高版本；
 - 目标耳机已通过系统蓝牙完成配对；
+- 使用原生连接展示或电量通知时，勾选 `com.xiaomi.bluetooth` 作用域；
 - LSPosed 必选作用域为 `com.android.bluetooth` 和 `com.milink.service`；如需厂商 App
   运行时退避，再按[控制 App 目录](https://github.com/silverpoetry/HyperEars/blob/main/docs/control-apps.md)
   勾选实际使用的厂商应用。
@@ -81,8 +99,9 @@ Android 15 以下系统不在当前公开测试范围内。
 1. 从本仓库的 [Releases](https://github.com/Xposed-Modules-Repo/dev.hyperears/releases)
    下载 APK。
 2. 安装 APK，在 LSPosed 中启用 HyperEars。
-3. 确认作用域为 `com.android.bluetooth` 和 `com.milink.service`。
-4. 重启设备，使蓝牙进程和 MiLink 进程同时加载模块。
+3. 确认核心作用域为 `com.android.bluetooth` 和 `com.milink.service`；使用原生连接展示或
+   电量通知时，另外勾选 `com.xiaomi.bluetooth`。
+4. 重启设备，使各作用域加载新版模块；仅切换蓝牙开关不保证系统蓝牙扩展重新加载。
 5. 连接耳机后打开 HyperEars，检查会话中的 Adapter、传输、协议和 MiLink 状态。
 
 首次从早期开发测试包迁移时，如遇签名不一致，应先在 LSPosed 中禁用旧模块、重启、
