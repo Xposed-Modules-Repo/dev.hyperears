@@ -62,6 +62,10 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 更新已有弹窗和通知；修复重复弹窗、通知不更新及点击误入小米专用耳机详情页的问题。
 调试预览可以再次显示已结束的提示，并反馈未就绪、系统占用或入口不可用等原因。
 
+3.3.0 补充已核对的 Android 15 / OS3.0.5.0.VMNCNXM 蓝牙扩展 15/35 的旧原生展示路径，
+修复该构建的登记检查不可用、连接提示与电量通知兼容问题。最终维护包已获实机反馈；其他构建
+按入口检查结果启用，不能据此认定全部 Android 15 系统已验证。
+
 这些功能需在 LSPosed 中勾选 `com.xiaomi.bluetooth`，升级或调整作用域后重启设备。
 已有 HyperOS 4 的 Bose QuietComfort Headphones、vivo TWS Air3 Pro 对应展示实测，
 以及 HyperOS 3 / vivo TWS 4 修复包的正常反馈；
@@ -73,13 +77,16 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 |---|---|
 | vivo / iQOO | TWS Air3 Pro 实机验证；TWS 3e 公开实现；其他已登记型号使用家族协议确认 |
 | OPPO Enco | Air2 Pro、Free4、X3、Air5 参考协议；其他 Enco 型号使用家族协议确认 |
+| OnePlus | Buds 4 自动识别、组件电量与三态；维护版已复核，其他已登记 Buds / Buds Pro 代际家族探测 |
+| Dreame / TheAstro | OpenPro S2 电量、充电与四档音效已复核；Dreame Flo S2 家族外推 |
+| SWARMOO / 贝壳王子 | MO3 PRO 双耳电量、盒电量及四态已复核；单耳控制继续跟踪 |
 | Technics EAH-AZ | AZ80 实机验证：组件电量、三态控制；其他 EAH-AZ TWS 公开协议探测 |
 | StarRing / 籁特易耳 | Ultra 实机验证；其他型号使用标准耳机回退 |
 | Bose | QuietComfort Headphones 实机验证；已登记 BMAP 产品按产品身份和控制方言细化 |
 | Edifier / 漫步者 | W860NB PRO、花再 Evo Pro、FitClip Ultra 实机验证；FitBuds Turbo 原版实测、维护布局待复核；其他已登记型号协议探测 |
 | ROSESELSA / 弱水时砂 | 琉璃 X / Ultra、Furina 实机验证；琉璃 X 同地址控制端点维护版已复核；其他已登记产品公开实现或协议探测 |
 | NiceHCK / YuanDao | OriG in 公开实现；其他型号使用标准耳机回退 |
-| MOONDROP / 水月雨 | Robin 公开协议；Pudding 实机验证；ZZZ-ANGELS-OWS 维护版实机复核通过，仅左右耳电量；MIRAGE 原版部分实测、维护版待复核；其他型号标准回退 |
+| MOONDROP / 水月雨 | Robin 公开协议；Pudding 自适应降噪与抗风噪、MIRAGE 和 ZZZ-ANGELS-OWS 维护版已复核；PILL 左右耳电量实测；其他标准回退 |
 | 荣耀 | X5s Pro 实机验证；协议确认后提供组件电量和降噪、关闭、通透 |
 | 华为 | 5i、Pro 3、FreeClip 2 实机验证；FreeClip 2 仅组件电量；其他型号公开实现或家族探测 |
 | QCY | Crossky C50S 公开协议；同协议家族进行协议确认，其他型号使用标准耳机回退 |
@@ -92,7 +99,7 @@ MiLink 融合设备中心所需的设备身份、能力和运行状态，使这�
 控制能力。具体型号、证据等级、判型条件和开放能力以
 [完整兼容性矩阵](https://github.com/silverpoetry/HyperEars/blob/main/docs/compatibility.md)为准。
 
-FitBuds Turbo、MIRAGE 与 Buds2 Pro 的原版实测记录保留，维护版实机复核继续跟踪。
+FitBuds Turbo 与 Buds2 Pro 的原版实测记录保留，维护版实机复核继续跟踪；MIRAGE 协议维护版已复核。
 新版 Bose 卡片修复已通过布局与模式映射测试，实际显示和点击仍待设备复核。
 Space Travel 2 Ultra 目前只补充家族名称识别，提供系统整机电量、音量和流转。
 
